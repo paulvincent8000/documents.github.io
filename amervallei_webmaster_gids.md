@@ -1,4 +1,4 @@
-## Amervallei Webmaster Guide
+# Amervallei Webmaster Guide
 
 ![This is from the website.](https://usercontent.one/wp/amervallei.nl/wp-content/themes/genesis-sample/images/header.jpg)
 
@@ -29,8 +29,10 @@ Backup files are saved once per week to a folder in [Google Drive][46b5005a]. Re
 
   [46b5005a]: https://drive.google.com/drive/u/1/folders/1Ia0dseuPkpZK-nHOS6T1zBpj2leVo2i3 "Google Drive - Updraft Plus Backup Folder"
 
-## Major Changes using Staging
-Staging avoids the risk of downtime by allowing major changes to be tested before they are applied to the live website.
+## Major Changes and Development Offline
+To avoid risk of disruption to the live website all major changes and new developments are carried out and tested in separate places. Work on the live site is limited to managing content and members.
+### Staging
+Staging is particularly useful for testing updates before they are applied to the live website.
 
 A copy of the entire website is made to a stage. Changes are carried out on the copy and tested. The website is then copied from the stage to replace the live website. The stage is then deleted. If work on the staging site does not function as desired the stage can be replaced or deleted without affecting the live website.
 
@@ -43,3 +45,32 @@ A copy of the entire website is made to a stage. Changes are carried out on the 
 Staging is set up from the Wordpress dashboard using a plug-in:  [instructions for use][898b4463].
 
   [898b4463]: https://help.one.com/hc/nl/articles/360000020617-Gebruik-de-One-com-Staging-plugin-voor-WordPress "One.com Staging"
+### Development Sites (Speeltuin)
+For major development or extensive evaluation of new plug-ins a completely separate site can be preferable to staging. This allows work to be done in a completely separate database and file system, which can simply be shut down when no longer required. A clone of the live website can be made using the plug-in [Duplicator Pro][a28e4407].
+
+[a28e4407]: https://snapcreek.com/duplicator/docs/ "Duplicator Pro Documentation"
+
+## Membership Access
+Sensitive personal information and premium content is only available to authorised members after login.
+
+Access restrictions can be applied at different levels:
+- Entire Site _(not in use)_
+- Entire Pages & Menu Items _(e.g. member pages)_
+- Blog Posts & Events
+- Selected Content _(e.g. event photos, newsletter content)_
+
+It is possible to assign privileges to different roles. This is not currently used.
+> Note: do not grant access to secure content to the *Customer* role.
+
+## Other Security Measures
+Further measures taken to protect website security include:
+- A [firewall][fd957733] to protect from hackers and spam
+- Use of [SSL][2f291dea] to encrypt traffic to and from the website
+- Contact form protection agains spam with a [Honeypot][60c79bfc] and challenge question
+- Avoid use of Email addresses (and encode them against robots where used)
+- Users are prompted to create strong passwords
+- Ensure knowledge is spread across multiple webmasters and documented.
+
+  [fd957733]: https://wordpress.org/plugins/wordfence/ "Wordfence"
+  [2f291dea]: https://really-simple-ssl.com/knowledge-base-overview/ "Really Simple SSL Plug-in"
+  [60c79bfc]: http://www.nocean.ca/plugins/honeypot-module-for-contact-form-7-wordpress-plugin/ "Honeypot Plug-in"
