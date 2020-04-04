@@ -73,4 +73,4 @@ Further measures taken to protect website security include:
 
   [fd957733]: https://wordpress.org/plugins/wordfence/ "Wordfence"
   [2f291dea]: https://really-simple-ssl.com/knowledge-base-overview/ "Really Simple SSL Plug-in"
-  [60c79bfc]: http://www.nocean.ca/plugins/honeypot-module-for-contact-form-7-wordpress-plugin/{target="_blank"} "Honeypot Plug-in"
+  [60c79bfc]: http://www.nocean.ca/plugins/honeypot-module-for-contact-form-7-wordpress-plugin/ "Honeypot Plug-in"
