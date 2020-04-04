@@ -15,22 +15,12 @@
 <body>
   <script src="js/scripts.js"></script>
   Hello World this is another change to my file
-  <object type="text/html" data="https://github.com/paulvincent8000/documentation/blob/master/README.html">
+  <object type="text/html" data="https://paulvincent8000.github.io/documents.github.io/">
 </object>
-<iframe src="https://github.com/paulvincent8000/documentation/blob/master/README.html">
+<iframe src="https://paulvincent8000.github.io/documents.github.io/">
 </iframe>
 
 
-<iframe id="github-iframe" src=""></iframe>
-<script>
-    fetch('https://api.github.com/repos/paulvincent8000/documentation/README.html')
-        .then(function(response) {
-            return response.json();
-        }).then(function(data) {
-            var iframe = document.getElementById('github-iframe');
-            iframe.src = 'data:text/html;base64,' + encodeURIComponent(data['content']);
-        });
-</script>
 
 </body>
 </html>
