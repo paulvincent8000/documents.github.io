@@ -74,3 +74,28 @@ Further measures taken to protect website security include:
   [fd957733]: https://wordpress.org/plugins/wordfence/ "Wordfence"
   [2f291dea]: https://really-simple-ssl.com/knowledge-base-overview/ "Really Simple SSL Plug-in"
   [60c79bfc]: http://www.nocean.ca/plugins/honeypot-module-for-contact-form-7-wordpress-plugin/ "Honeypot Plug-in"
+
+## Register New Members
+Members can register via the web shop, where they have the option to enrol for the brewing course or sign up for membership. The web shop handles the full transaction, including payment by Ideal. A notification is sent by e-mail to the treasurer and webmaster. Membership must be confirmed as described in the next section.
+
+### Confirmation of membership
+New members create a user account on the website as part of the registration process and are automatically assigned the user role _Customer_. This user account is created before proceeding to checkout and remains in place even if payment is not successfully completed. The user role _Customer_ does not have access to secure content on the website. In order to grant access the new membership must be manually confirmed by changing the user role from _Customer_ to _Subscriber_.
+
+Confirm Membership from the member directory:
+```
+1. Login to the Website
+2. Follow the menu to: Mijn Amervallei > Leden
+3. Search for the new member
+4. Open user profil (Profiel Bewerken)
+5. Change user role to Subscriber (Gebruikersrollen)
+6. Click Update Profile button to confirm and close
+7. Log off when finished
+```
+> Administrators: This change can also be made from the user menu in the administration console. Under 'Rol' change user from 'Klant' to 'Abonnee'.
+
+### Brewing Course Information and Pricing
+The brewing course and new memberships are sold as products in the web shop. Details of each year's course and any price changes should be made to these products rather than in the site pages directly. Products can be added and modified in the products section of the administrator dashboard.
+## Publish Newsletter
+Newsletters are published as Posts (Berichten). Assign the category Newsletter to ensure they will appear on the sidebar of the home page.
+## Publish Events
+Events are posted from the Events section of the administrators dashboard. Current and future events will appear on the front page in chronological order.
