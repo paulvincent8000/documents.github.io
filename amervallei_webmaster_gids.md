@@ -29,7 +29,7 @@ Backup files are saved once per week to a folder in [Google Drive][46b5005a]. Re
 
   [46b5005a]: https://drive.google.com/drive/u/1/folders/1Ia0dseuPkpZK-nHOS6T1zBpj2leVo2i3 "Google Drive - Updraft Plus Backup Folder"
 
-### Staging
+## Major Changes using Staging
 Staging avoids the risk of downtime by allowing major changes to be tested before they are applied to the live website.
 
 A copy of the entire website is made to a stage. Changes are carried out on the copy and tested. The website is then copied from the stage to replace the live website. The stage is then deleted. If work on the staging site does not function as desired the stage can be replaced or deleted without affecting the live website.
