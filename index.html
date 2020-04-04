@@ -1,1 +1,36 @@
-"Hello World" 
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+  <script src="js/scripts.js"></script>
+  Hello World
+  <object type="text/html" data="https://github.com/paulvincent8000/documentation/blob/master/README.html">
+</object>
+<iframe src="https://github.com/paulvincent8000/documentation/blob/master/README.html">
+</iframe>
+
+
+<iframe id="github-iframe" src=""></iframe>
+<script>
+    fetch('https://api.github.com/repos/paulvincent8000/documentation/README.html')
+        .then(function(response) {
+            return response.json();
+        }).then(function(data) {
+            var iframe = document.getElementById('github-iframe');
+            iframe.src = 'data:text/html;base64,' + encodeURIComponent(data['content']);
+        });
+</script>
+
+</body>
+</html>
