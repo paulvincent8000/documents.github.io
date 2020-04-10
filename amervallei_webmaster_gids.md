@@ -99,3 +99,11 @@ The brewing course and new memberships are sold as products in the web shop. Det
 Newsletters are published as Posts (Berichten). Assign the category Newsletter to ensure they will appear on the sidebar of the home page.
 ## Publish Events
 Events are posted from the Events section of the administrators dashboard. Current and future events will appear on the front page in chronological order.
+
+## Minor Updates (e.g. plug-ins)
+1. Enure backup is available from host
+   Backups are automatically made each day. If no activity has taken place on the site then the backup from the previous day will be available.
+2. Create staging Site
+3. Update plug-ins on staging Site and note the order
+4. If all updates are successful the staging site is now available as backup for the live site. Update same plug-ins in the same order.
+5. If updates on the live site are successful then delete the staging site. Otherwise copy the staging site to live and test. Then delete the staging site.
