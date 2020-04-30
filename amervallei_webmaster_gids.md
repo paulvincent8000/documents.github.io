@@ -104,6 +104,16 @@ Events are posted from the Events section of the administrators dashboard. Curre
 1. Enure backup is available from host
    Backups are automatically made each day. If no activity has taken place on the site then the backup from the previous day will be available.
 2. Create staging Site
-3. Update plug-ins on staging Site and note the order
-4. If all updates are successful the staging site is now available as backup for the live site. Update same plug-ins in the same order.
-5. If updates on the live site are successful then delete the staging site. Otherwise copy the staging site to live and test. Then delete the staging site.
+3. Update one plug-in on the staging Site
+4. If the update is successful then update the same plug-in on the live site. The staging site is available to fall back on if needed. Otherwise re-build the staging site again and try updating a different plug-in.
+4. Repeat this process one plug-in at a time until all updates have been successfully carried out.
+5. If updates on the live site are successful then delete the staging site. Otherwise copy the staging site to live and test. It may be necessary to update the permalinks after a staging site has been copied to live. Then delete the staging site.
+
+##  User Roles
+WordPress provides the following roles:
+- Administrator (slug: ‘administrator’) – somebody who has access to all the administration features within a single site.
+- Editor (slug: ‘editor’) – somebody who can publish and manage posts including the posts of other users.
+- Author  (slug: ‘author’)  – somebody who can publish and manage their own posts.
+- Contributor (slug: ‘contributor’) – somebody who can write and manage their own posts but cannot publish them.
+- Subscriber (slug: ‘subscriber’) – somebody who can only manage their profile.
+[WordPress Roles](https://wordpress.org/support/article/roles-and-capabilities/)
