@@ -120,7 +120,7 @@ WordPress provides the following roles:
 
 ##  User data structure for forms
 Database|Default Registration Form 209|Afrekenen Woocommerce [woocommerce_checkout]|Default Profile Form 211
---------|----------|-----|----|---
+--------|----------|-----|----
 www_users.ID| _[automatic]_ | _[automatic]_ |Lidnummer
 www_users.user_login|Gebruikersnaam|Gebruikersnaam
 www_users.user_pass|Wachtwoord|Accountwachtwoord aanmaken
