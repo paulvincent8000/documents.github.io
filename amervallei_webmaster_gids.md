@@ -117,3 +117,44 @@ WordPress provides the following roles:
 - Contributor (slug: ‘contributor’) – somebody who can write and manage their own posts but cannot publish them.
 - Subscriber (slug: ‘subscriber’) – somebody who can only manage their profile.
 [WordPress Roles](https://wordpress.org/support/article/roles-and-capabilities/)
+
+##  User data structure for forms
+Database|Default Registration Form 209|Afrekenen Woocommerce [woocommerce_checkout]|Default Profile Form 211
+--------|----------|-----|----|---
+www_users.ID| _[automatic]_ | _[automatic]_ |Lidnummer
+www_users.user_login|Gebruikersnaam|Gebruikersnaam
+www_users.user_pass|Wachtwoord|Accountwachtwoord aanmaken
+www_users.user_email|E-mailadres|E-mailadres|E-mailadres
+www_users.display_name|-| _[Voornaam Achternaam]_ |
+www_usermeta.meta_key.billing_address_1|Straat en Huisnr|Straat en huisnummer|Straat en Huisnr
+www_usermeta.meta_key.billing_address_2|
+www_usermeta.meta_key.billing_city|Woonplaats|Plaats|Woonplaats
+www_usermeta.meta_key.billing_company|
+www_usermeta.meta_key.billing_country|
+www_usermeta.meta_key.billing_email|Email|E-mailadres|Email _'from woo commerce'_
+www_usermeta.meta_key.billing_first_name|Voornaam|Voornaam|Voornaam
+www_usermeta.meta_key.billing_last_name|Achternaam|Achternaam
+www_usermeta.meta_key.billing_phone|Telefoon|Telefoon|Telefoon
+www_usermeta.meta_key.billing_postcode|Postcode|Postcode|Postcode
+www_usermeta.meta_key.billing_state|
+www_usermeta.meta_key.first_name|-|Voornaam
+www_usermeta.meta_key.form_id|
+www_usermeta.meta_key.full_name|
+www_usermeta.meta_key.gilde_status|Gilde Status|-|Gilde Status
+www_usermeta.meta_key.role_select|-|-|Gebruikersrollen
+www_usermeta.meta_key.last_name|-|Achternaam|Achternaam
+www_usermeta.meta_key.mobile_number|Mobiel nummer|-|Mobiel nummer
+www_usermeta.meta_key.shipping_address_1|
+www_usermeta.meta_key.shipping_address_2|
+www_usermeta.meta_key.shipping_city|
+www_usermeta.meta_key.shipping_company|
+www_usermeta.meta_key.shipping_country|
+www_usermeta.meta_key.shipping_first_name|
+www_usermeta.meta_key.shipping_last_name|
+www_usermeta.meta_key.shipping_method|
+www_usermeta.meta_key.shipping_postcode|
+www_usermeta.meta_key.shipping_state|
+www_usermeta.meta_key.show_admin_bar_front|
+www_usermeta.meta_key.um_member_directory_data|- | _[account_status]_
+www_usermeta.meta_key.wp_capabilities|-|-|-
+www_usermeta.meta_key.www_capabilities|-| _["customer"]_
